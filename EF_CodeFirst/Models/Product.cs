@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace EF_CodeFirst.Models
+{
+    public class Product
+    {
+        public long ProductId { get; set; }
+        public string ProductName { get; set; }
+        public Nullable<decimal> Price { get; set; }
+        public Nullable<System.DateTime> DateOfPurchase { get; set; }
+        public string AvailabilityStatus { get; set; }
+        public Nullable<int> CategoryId { get; set; }
+        public Nullable<int> BrandId { get; set; }
+        public Nullable<int> Active { get; set; }
+
+        public virtual Brand Brand { get; set; }
+        public virtual Category Category { get; set; }
+
+    }
+}
