@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="EF_CodeFirst26.MvcApplication" Language="C#" %>
+﻿<%@ Application Language="C#" Codebehind="Global.asax.cs" Inherits="EF_CodeFirst26.MvcApplication" %>

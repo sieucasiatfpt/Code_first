@@ -1,3 +1,4 @@
+using EF_CodeFirst26;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace EF_CodeFirst26
-{
+{       
     public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
