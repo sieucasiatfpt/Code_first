@@ -1,6 +1,8 @@
 using EF_CodeFirst26;
+using EF_CodeFirst26.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -14,6 +16,8 @@ namespace EF_CodeFirst26
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<CompanyDB26Context>());
         }
     }
 }

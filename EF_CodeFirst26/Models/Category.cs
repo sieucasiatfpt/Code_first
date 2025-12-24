@@ -9,7 +9,7 @@ namespace EF_CodeFirst26.Models
     public class Category
     {
         [Key]
-        public long CategoryId { get; set; }
+        public long CategoryID { get; set; }
         public string CategoryName { get; set; }
     }
 }
